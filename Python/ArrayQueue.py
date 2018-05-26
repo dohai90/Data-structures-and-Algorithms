@@ -65,3 +65,5 @@ if __name__ == '__main__':
     for i in range(4):
         q.enqueue(i+5)
 
+    print(len(q))
+
