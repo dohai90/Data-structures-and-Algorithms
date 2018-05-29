@@ -84,6 +84,25 @@ class PositionalList(_DoublyLinkedBase):
         return old_value
 
 
+def insertion_sort(L):
+    """ Insertion sort on Positional List"""
+    if len(L) > 1:          # otherwise, don't need to sort
+        marker = L.first()
+
+        while marker != L.last():
+            pivot = L.after(marker)
+            value = pivot.item()
+            if value >= marker.item():
+                marker = pivot
+            else:
+                walker = marker
+                while walker != L.first() and value < L.before(walker).item():
+                    walker = L.before(walker)
+
+                L.delete(pivot)
+                L.add_before(value, walker)
+
+
 if __name__ == '__main__':
     pl = PositionalList()
     p1 = pl.add_first(1)
@@ -94,12 +113,18 @@ if __name__ == '__main__':
     p6 = pl.add_after(6, p2)
 
     for item in pl:
-        print(item)
-
+        print(item, end=' ')
     print()
+
     print(pl.delete(p6))
     print(pl.replace(7, p5))
 
     print('New list:')
     for item in pl:
-        print(item)
+        print(item, end=' ')
+    print()
+
+    insertion_sort(pl)
+    print('Sorted list:')
+    for item in pl:
+        print(item, end=' ')
