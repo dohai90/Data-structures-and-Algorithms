@@ -43,6 +43,13 @@ class FavoritesList:
         p.item()._count += 1
         self._move_up(p)
 
+    def access_item(self, item):
+        val = item._value
+        p = self._find_position(val)
+        if p is None:
+            p = self._data.add_last(item)
+        self._move_up(p)
+
     def remove(self, val):
         p = self._find_position(val)
         if p is not None:
@@ -65,11 +72,11 @@ if __name__ == '__main__':
     for i in range(1):
         fl.access(1)
 
-    for i in range(7):
-        fl.access(7)
-
     for i in range(9):
         fl.access(9)
 
+    for i in range(7):
+        fl.access(7)
+
     for value in fl.top(2):
-        print(value)
+        print(value, end=' ')
