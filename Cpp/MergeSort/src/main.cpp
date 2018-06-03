@@ -27,7 +27,7 @@ int main() {
 
 	cout << "After sorting:" << endl;
 	Comparator<int> less;
-	mergeSort(S, less);
+	Merge<int, Comparator<int> >::sort(S, less);
 	for(Itor p=S.begin(); p!=S.end(); ++p){
 		cout << *p << " ";
 	}

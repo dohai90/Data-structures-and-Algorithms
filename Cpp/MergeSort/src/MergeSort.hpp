@@ -19,7 +19,15 @@ public:
 };
 
 template <typename E, typename C>
-void merge(std::list<E>& S1, std::list<E>& S2, std::list<E>& S, const C& less){
+class Merge {
+public:
+	static void sort(std::list<E>& S, const C& less);
+protected:
+	static void merge(std::list<E>& S1, std::list<E>& S2, std::list<E>& S, const C& less);
+};
+
+template <typename E, typename C>
+void Merge<E, C>::merge(std::list<E>& S1, std::list<E>& S2, std::list<E>& S, const C& less){
 	typedef typename std::list<E>::iterator Itor;
 	Itor p1 = S1.begin();
 	Itor p2 = S2.begin();
@@ -41,7 +49,7 @@ void merge(std::list<E>& S1, std::list<E>& S2, std::list<E>& S, const C& less){
 }
 
 template <typename E, typename C>
-void mergeSort(std::list<E>& S, const C& less){
+void Merge<E, C>::sort(std::list<E>& S, const C& less){
 	typedef typename std::list<E>::iterator Itor;
 	int n = S.size();
 	if(n<=1) return;
@@ -54,8 +62,8 @@ void mergeSort(std::list<E>& S, const C& less){
 	S.clear();
 
 	// recur
-	mergeSort(S1, less);
-	mergeSort(S2, less);
+	sort(S1, less);
+	sort(S2, less);
 
 	// merge
 	merge(S1, S2, S, less);
