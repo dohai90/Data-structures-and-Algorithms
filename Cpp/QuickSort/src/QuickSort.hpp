@@ -9,6 +9,7 @@
 #define QUICKSORT_HPP_
 
 #include <vector>
+#include <algorithm>
 
 template <typename E>
 class Comparator {
@@ -27,6 +28,11 @@ protected:
 
 template <typename E, typename C>
 void Quick<E, C>::sort(std::vector<E>& S, const C& less){
+	std::random_shuffle(S.begin(), S.end());
+	std::cout << "Vector shuffling:" << std::endl;
+	for(typename std::vector<E>::iterator p=S.begin(); p != S.end(); ++p)
+		std::cout << *p << " ";
+	std::cout << std::endl;
 	sort(S, 0, S.size() - 1, less);
 }
 
