@@ -1,3 +1,6 @@
+from LinkedQueue import LinkedQueue
+
+
 class Tree:
     """ Abstract base class representing a tree structure """
 
@@ -53,3 +56,44 @@ class Tree:
         if p is None:
             p = self.root()
         return self._height(p)
+
+    def preorder(self):
+        """ Generate a preorder iteration of positions in the tree"""
+        if not self.is_empty():
+            for p in self._subtree_preorder(self.root()):
+                yield p
+
+    def _subtree_preorder(self, p):
+        """ Generate a preorder iteration of positions of a subtree rooted at p """
+        yield p
+        for c in self.children(p):
+            for other in self._subtree_preorder(c):
+                yield other
+
+    def postorder(self):
+        """ Generate a postorder iteration of positions in the tree"""
+        if not self.is_empty():
+            for p in self._subtree_postorder(self.root()):
+                yield p
+
+    def _subtree_postorder(self, p):
+        """ Generate a postorder iteration of positions of a subtree rooted at p """
+        for c in self.children(p):
+            for other in self._subtree_postorder(c):
+                yield other
+        yield p
+
+    def breathfirst(self):
+        """ Generate a breath first iteration of positions in the tree """
+        if not self.is_empty():
+            q = LinkedQueue()
+            q.enqueue(self.root());
+            while not q.is_empty():
+                p = q.dequeue()
+                yield p
+                for c in self.children(p):
+                    q.enqueue(c)
+
+    def positions(self):
+        """ Generate all positions in a given tree """
+        return self.preorder()
