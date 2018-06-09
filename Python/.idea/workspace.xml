@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df54ddd5-0934-41e0-8f6d-68bace4930aa" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/HeapPQ.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/MapBase.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/UnsortedTableMap.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,8 +80,8 @@
       <file leaf-file-name="SortedPQ.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SortedPQ.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="58" column="39" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="58" selection-end-column="39" />
+            <state relative-caret-position="298">
+              <caret line="47" column="12" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="58" selection-end-column="39" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -88,7 +89,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HeapPQ.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HeapPQ.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HeapPQ.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="316">
@@ -100,12 +101,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkedBinaryTree.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LinkedBinaryTree.py">
+      <file leaf-file-name="MapBase.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MapBase.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1332">
-              <caret line="74" column="22" lean-forward="true" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+            <state relative-caret-position="306">
+              <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UnsortedTableMap.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/UnsortedTableMap.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="51" column="68" lean-forward="false" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,6 +152,8 @@
         <option value="$PROJECT_DIR$/UnsortedPQ.py" />
         <option value="$PROJECT_DIR$/SortedPQ.py" />
         <option value="$PROJECT_DIR$/HeapPQ.py" />
+        <option value="$PROJECT_DIR$/MapBase.py" />
+        <option value="$PROJECT_DIR$/UnsortedTableMap.py" />
       </list>
     </option>
   </component>
@@ -194,25 +209,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.HeapPQ">
-    <configuration name="FavoritesListMTF" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FavoritesListMTF.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.UnsortedTableMap">
     <configuration name="HeapPQ" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -285,20 +282,38 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="UnsortedTableMap" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UnsortedTableMap.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.FavoritesListMTF" />
-      <item index="1" class="java.lang.String" itemvalue="Python.PriorityQueueBase" />
-      <item index="2" class="java.lang.String" itemvalue="Python.UnsortedPQ" />
-      <item index="3" class="java.lang.String" itemvalue="Python.SortedPQ" />
-      <item index="4" class="java.lang.String" itemvalue="Python.HeapPQ" />
+      <item index="0" class="java.lang.String" itemvalue="Python.PriorityQueueBase" />
+      <item index="1" class="java.lang.String" itemvalue="Python.UnsortedPQ" />
+      <item index="2" class="java.lang.String" itemvalue="Python.SortedPQ" />
+      <item index="3" class="java.lang.String" itemvalue="Python.HeapPQ" />
+      <item index="4" class="java.lang.String" itemvalue="Python.UnsortedTableMap" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.HeapPQ" />
-        <item index="1" class="java.lang.String" itemvalue="Python.SortedPQ" />
-        <item index="2" class="java.lang.String" itemvalue="Python.UnsortedPQ" />
-        <item index="3" class="java.lang.String" itemvalue="Python.PriorityQueueBase" />
-        <item index="4" class="java.lang.String" itemvalue="Python.FavoritesListMTF" />
+        <item index="0" class="java.lang.String" itemvalue="Python.UnsortedTableMap" />
+        <item index="1" class="java.lang.String" itemvalue="Python.HeapPQ" />
+        <item index="2" class="java.lang.String" itemvalue="Python.SortedPQ" />
+        <item index="3" class="java.lang.String" itemvalue="Python.UnsortedPQ" />
+        <item index="4" class="java.lang.String" itemvalue="Python.PriorityQueueBase" />
       </list>
     </recent_temporary>
   </component>
@@ -389,7 +404,7 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -584,22 +599,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SortedPQ.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="58" column="39" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="58" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/HeapPQ.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="316">
           <caret line="84" column="31" lean-forward="false" selection-start-line="84" selection-start-column="31" selection-end-line="84" selection-end-column="31" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MapBase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SortedPQ.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="47" column="12" lean-forward="false" selection-start-line="45" selection-start-column="4" selection-end-line="58" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UnsortedTableMap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="51" column="68" lean-forward="false" selection-start-line="51" selection-start-column="68" selection-end-line="51" selection-end-column="68" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
