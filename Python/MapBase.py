@@ -1,7 +1,8 @@
 from collections import MutableMapping
 
+
 class MapBase(MutableMapping):
-    """ Map base class inherites from Mutable Mapping class """
+    """ Map base class inherits from Mutable Mapping class """
     class _Item:
         """ Item is included in Map base """
         def __init__(self, k, v):
